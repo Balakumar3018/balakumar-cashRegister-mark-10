@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 254, 254);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}   
+table,tr,td,td{
+    border: 2px solid black;
+    border-collapse:collapse; 
+    border-color: rgb(197, 151, 240);  
+
+}
+#btn-check{
+    margin: 20px auto;
+    background-color: rgb(197, 151, 240);
+    border-radius: 0.8rem;
+    height: 35px;
+    width: 150px;
+}
+.button-input{
+    margin: 20px 0px;
+    border-radius: 0.6rem;
+    border-style:double;
+    border-color: rgb(197, 151, 240);
+    height: 35px;
+}
+label{
+    text-align: center;
+    font-weight: bolder;
+}
+h1{
+    color: blueviolet;
+}
