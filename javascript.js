@@ -8,16 +8,23 @@ const availableNotesList=["2000","500","100","20","10","5","1"]
 
 btnCheck.addEventListener("click", function CalculateCashReg(){
             message.style.display="none";
-            if (Number(billAmount.value)> 0) {
-                if (Number(billAmount.value) <= Number(givenAmount.value)) {
+            const billamnt=Number(billAmount.value);
+            const givenamnt=Number(givenAmount.value);
+            if(billamnt >0 && givenamnt >0){
+            if (billamnt> 0) {
+                if (billamnt <= givenamnt) {
 
-                    let remainingAmount=Number(givenAmount.value) - Number(billAmount.value);
+                    let remainingAmount=givenamnt - billamnt;
                     CalculateNotes(remainingAmount);
                     
                 }
                 else messageDisplay("Cash given is less than bill amount") ;
             }
             else messageDisplay("Invalid Enter valid bill amount") ;
+        }
+        else{
+            messageDisplay("please enter positve inputs") ;
+        }
 
 });
 
