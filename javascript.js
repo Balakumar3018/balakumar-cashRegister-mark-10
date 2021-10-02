@@ -8,10 +8,10 @@ const availableNotesList=["2000","500","100","20","10","5","1"]
 
 btnCheck.addEventListener("click", function CalculateCashReg(){
             message.style.display="none";
-            if (billAmount.value > 0) {
-                if (billAmount.value <=  givenAmount.value) {
+            if (Number(billAmount.value)> 0) {
+                if (Number(billAmount.value) <= Number(givenAmount.value)) {
 
-                    let remainingAmount=givenAmount.value - billAmount.value;
+                    let remainingAmount=Number(givenAmount.value) - Number(billAmount.value);
                     CalculateNotes(remainingAmount);
                     
                 }
